@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+
+.btn {
+    @apply px-5 py-2 rounded-md transition-all duration-300;
+}
+
+.fshadow {
+    box-shadow: 10 10px 5px 20 rgb(0 0 0 / 1);
+}
+
+.is_invalid {
+    @apply border-2 border-red-600 ring-1 ring-red-600;
+}
+
+.is-invalid {
+    @apply border-[1px] border-red-600 ring-1 ring-red-600;
+}
+
+.feedback {
+    @apply text-sm text-red-600 italic mt-1;
+}
+
+.active {
+    @apply bg-[#eeeeee] text-[#FFAA29];
+}
+
+.btn-active {
+    @apply bg-[#FFC700] text-black;
+}
+
+@tailwind utilities;
+
+.navbar-fixed {
+    @apply fixed z-[1000] bg-white bg-opacity-50;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-sky-900;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+/* #preloader {
+    background: #191f26 url("/public/img/loader2.gif") no-repeat center center;
+    background-size: 60%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+} */
